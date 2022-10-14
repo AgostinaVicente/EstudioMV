@@ -28,15 +28,17 @@
     background-size: cover;
     display: inline-block;
     overflow: hidden;
+    position: relative;
 }
 .title{
     position: absolute;
-    color: #fefefe;
+    color: #0D0920;
     font-size: 40px;
     font-family: 'Hind Madurai 600', sans-serif;
-    bottom: 0;
-    background-color: #191240;
-    width: 100%;
+    bottom: 0%;
+    right: 0%;
+    background-color: #fefefe;
+    width: 50%;
 }
 .titlesSections{
     font-family: 'Hind Madurai 600', sans-serif;;
@@ -59,6 +61,10 @@
     color: #fefefe;
     border-bottom:2px solid #0D0920;
 }
+
+.buttonacordeon:active{
+    box-shadow: #0D0920;
+}
 .Divimg{
     width: 10%;
     height: 30px;
@@ -76,12 +82,17 @@
     padding-left: 30px;
     
 }
-.buttonacordeon:hover{
-    text-decoration: dashed #fefefe;
+.buttonacordeon:active{
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(25,18,64,1);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(25,18,64,1);
+    box-shadow: 0px 0px 19px 0px rgba(25,18,64,1);
+    background-color: #191240;
 }
-
-.title{
-    font-size: 30px;
+.buttonacordeon:is(.collapsed)::after {
+    box-shadow: none;   
+}
+.buttonacordeon: not(.collapsed)::after {
+    box-shadow: none;   
 }
 .titlesSections{
     font-size: 40px;
@@ -96,6 +107,10 @@
     color: #0D0920;
     font-family:'Hind Madurai 300', sans-serif; 
     padding: 5%;
+}
+.nosotrosDescription::selection{
+    background-color: #0D0920;
+    color: #fefefe;
 }
 .nosotros_li{
     display: inline-block;
@@ -136,6 +151,11 @@
     border-bottom: 1px solid #0D0920;
     border-top: 1px solid #0D0920;
 }
+.newscard:hover{
+    border: 2px solid #191240;
+    background-color: #fefefe;
+   
+}
 .divCard{
     height: 140px;
     width: 400px;
@@ -145,21 +165,40 @@
 .card-title{
     font-size: 16px;
 }
+.card-title::selection{
+    background-color: #0D0920;
+    color: #fefefe;
+}
 .card-text{
     color: #0D0920;
     font-family: 'Hind Madurai 500', sans-serif;
     margin: 2px;
     font-size: 14px;
 }
+.card-text::selection{
+    background-color: #0D0920;
+    color: #fefefe;
+}
 .abutton{
     bottom: 5%;
     right: 5%;
     position: absolute;
-    background-color: #fefefe;
+    background-color:transparent;
     color: #0D0920;
     border-radius: 0;
     border-color: transparent;
     border-bottom: 2px solid #0D0920;
+    text-decoration: none;
+
+}
+.abutton:hover{
+    color: #191240;
+    font-weight: bold;
+    font-size: 18px;
+    width: 75px;
+    height: 30px;
+    text-align: center;
+
 }
 .contact__div{
     display: grid;
@@ -178,6 +217,15 @@
 .input{
     width: 100%;
     height: 100%;
+    outline: none;
+}
+.input:focus{
+    box-shadow: 0px 0px 19px 0px rgba(25,18,64,1);
+    border-radius: 5px;
+}
+.formtextarea:focus{
+    box-shadow: 0px 0px 19px 0px rgba(25,18,64,1);
+    border-radius: 5px;
 }
 .formtextarea{
     width: 100%;
@@ -238,6 +286,9 @@
         font-size: 20px;
         width: 50px;
     }
+    .title{
+       visibility: hidden;
+    }
     .divServices{
         flex-direction: column;
         justify-content: center;
@@ -293,6 +344,9 @@
     }
 }
 @media only screen and (min-width:451px) and (max-width:960px) {
+    .title{
+        visibility: hidden;
+    }
     .divServices{
         flex-direction: column;
     }

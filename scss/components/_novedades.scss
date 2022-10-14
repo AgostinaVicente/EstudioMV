@@ -1,0 +1,112 @@
+section{
+        .newsDiv{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 30px;
+            column-gap: 10px;
+            justify-items: space-around;
+            margin-top: 30px;
+            border-radius: 0;
+                .newscard{
+                    height: 250px;
+                    width: 550px;
+                    margin: 20px 20px 20px 40px;
+                    position: relative;
+                    background-color:transparent;
+                    text-align: justify;
+                    padding: 15px;
+                    border-bottom: 1px solid #0D0920;
+                    border-top: 1px solid #0D0920; 
+                        .newsimg{
+                            width: 40px;
+                            height: auto;
+                        }
+                    article{
+                        .divCard{
+                            height: 140px;
+                            width: 400px;
+                            overflow: hidden;
+                            padding-left: 30px;
+                            .card-title{
+                                font-size: 16px;
+                            }
+                            .card-title::selection{
+                                background-color: #0D0920;
+                                color: #fefefe;
+                            }
+                            .card-text{
+                                color: #0D0920;
+                                font-family: 'Hind Madurai 500', sans-serif;
+                                margin: 2px;
+                                font-size: 14px;
+                            }
+                            .card-text::selection{
+                                background-color: #0D0920;
+                                color: #fefefe;
+                            }
+                            @media only screen and (max-width:450px){
+                                height: 140px;
+                                width: 200px;
+                                overflow: hidden;
+                                padding-left: 30px;
+
+                            }    
+
+                        }
+                        .abutton{
+                            bottom: 5%;
+                            right: 5%;
+                            position: absolute;
+                            background-color:transparent;
+                            color: #0D0920;
+                            border-radius: 0;
+                            border-color: transparent;
+                            border-bottom: 2px solid #0D0920;
+                            text-decoration: none;
+                        
+                        }
+                        .abutton:hover{
+                            color: #191240;
+                            font-weight: bold;
+                            font-size: 18px;
+                            width: 75px;
+                            height: 30px;
+                            text-align: center;
+                        }
+                    }
+                    @media only screen and (max-width:450px){
+                        height: 250px;
+                        width: 250px;
+                        margin: 20px 20px 20px 40px;
+                        position: relative;
+                        background-color:transparent;
+                        text-align: justify;
+                        padding: 15px;
+                        border-bottom: 1px solid #0D0920;
+                        border-top: 1px solid #0D0920;
+                       
+                    }    
+                     @media only screen and (min-width:451px) and (max-width:1220px) {
+                        height: 250px;
+                        width: 400px;
+                    } 
+                .newscard:hover{
+                    border: 2px solid #191240;
+                    background-color: #fefefe;
+                } 
+            
+            
+            }
+            @media only screen and (max-width:450px){
+                display: grid;
+                grid-template-columns: 1fr;
+            }    
+             @media only screen and (min-width:451px) and (max-width:1220px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                align-content: center;
+                justify-content: center;
+            } 
+        
+        }
+}     

@@ -1,0 +1,38 @@
+header{
+        .barra{
+            .navLanding{
+                background-color: #fefefe !important;
+                .imgNav{
+                    height: 80px;
+                    margin-left: 30px;
+                    @media only screen and (max-width:450px){
+                        padding-left: 0%;
+                        margin-left: 0%;
+                    }    
+                }
+                div{
+                    ul{
+                        .nav__li{
+                            color: #191240 !important;
+                            font-size: 20px;
+                            padding-right: 15px;
+                            font-family: ''Hind Madurai 500', sans-serif';
+                            @media only screen and (max-width:450px){
+                                padding-right: 0px;
+                                font-size: 20px;
+                                width: 50px;
+                            }
+                        }    
+                            .nav__a{
+                                color: #191240 !important;
+                            }
+                    }
+                 }
+             
+            }
+            @media only screen and (max-width:450px){
+                width: 100vh;
+            }
+        }
+    }
+     

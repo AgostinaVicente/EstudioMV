@@ -1,0 +1,46 @@
+section{
+        .nosotrosSection{
+            width: 90%;
+            border-radius: 1%;
+            margin: 5%;
+                .nosotrosDiv{
+                    .nosotrosDescription{
+                        font-size: 16px;
+                        color: #0D0920;
+                        font-family:'Hind Madurai 300', sans-serif; 
+                        padding: 5%;
+                        .nosotrosDescription::selection{
+                            background-color: #0D0920;
+                            color: #fefefe;
+                        }
+                    }
+                }
+                .nosotros__List{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    list-style: none;
+                    font-family: 'Hind Madurai 500', sans-serif;
+                    font-size: 20px;
+                    color: #fefefe;
+                    padding-bottom: 20%;
+                    padding-top: 7%;
+                    @media only screen and (max-width:450px){
+                        display: flex;
+                        flex-direction: column;
+                    }    
+                    @media only screen and (min-width:451px) and (max-width:960px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .nosotros_li{
+                        display: inline-block;
+                        color: #0D0920;
+                        .imgnosotros{
+                            width: 50px;
+                            height: auto;
+                        }
+                    }
+                }
+        }
+     }

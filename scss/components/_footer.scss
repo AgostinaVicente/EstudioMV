@@ -1,0 +1,36 @@
+footer{
+        .footer__nav{
+            margin-top: 30px;
+            background-color: #0D0920 !important; 
+            height: 200px;
+            .footer__div{
+                height: 100%;
+                .pFooter{
+                    font-family: 'Hind Madurai 500', sans-serif;
+                    font-size: 20px;
+                    color: #fefefe !important;
+                    margin-bottom: 30px;
+                }
+                .maps{
+                    height: 10%;
+                    width: auto;
+                    display: inline-block;
+                    bottom: 10px;
+                    margin-top: 30px;
+                    margin-right: 30px;
+                }
+                @media only screen and (max-width:450px){
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-content: center;
+                }        
+            } 
+            @media only screen and (max-width:450px){ 
+                height: 600px;
+            }  
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                height: 400px;
+            }
+        }
+    }

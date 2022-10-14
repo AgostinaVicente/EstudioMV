@@ -1,0 +1,28 @@
+.divHome{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 580px;
+    background-image:url(../imagenes/Inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+        .title{
+            position: absolute;
+            color: #0D0920;
+            font-size: 40px;
+            font-family: 'Hind Madurai 600', sans-serif;
+            bottom: 0%;
+            right: 0%;
+            background-color: #fefefe;
+            width: 50%;
+            @media only screen and (max-width:450px){
+                visibility: hidden;
+            }
+            @media only screen and (min-width:451px) and (max-width:960px) {
+                visibility: hidden;
+            }    
+        }
+}
