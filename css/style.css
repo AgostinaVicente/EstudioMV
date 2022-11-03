@@ -347,6 +347,10 @@ footer .footer__nav {
 footer .footer__nav .footer__div {
   height: 100%;
 }
+footer .footer__nav .footer__div .footer_links {
+  color: #fefefe;
+  text-decoration: solid #fefefe;
+}
 footer .footer__nav .footer__div .pFooter {
   font-family: "Hind Madurai 500", sans-serif;
   font-size: 20px;
